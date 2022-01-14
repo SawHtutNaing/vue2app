@@ -14,7 +14,12 @@
 <script>
     export default {
         name:"List",
-        
+        data() {
+            return {
+                   isEdit : false,
+                isDelete : false,
+            }
+        },
         props:{
             list:{
                 type:Object,
